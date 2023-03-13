@@ -15,27 +15,28 @@
 
 .tituloh2{
     margin-top: 3rem;
-    font-family: variables.$letra-subtitulos;
+    font-family: variables.$letra-subtitulos;}
 
-    .parrafos{
+.parrafos{
         font-size: variables.$letra-media;
         color: variables.$color-marron;
         font-family: variables.$font-family;
         text-align: variables.$texto-centrado;
         font-weight:bold;
-    }
-}
+    
 .whatsapp{
-    font-style: italic;
-    font-size: medium;
-    font-weight: bold;
-    color: #055d2d;
-    text-decoration: none;
-    &:hover{
-        color:variables.$color-crema;
+            font-style: italic;
+            font-size: medium;
+            font-weight: bold;
+            color: #055d2d;
+            text-decoration: none;
+         &:hover{
+            color: variables.$color-crema;
+         }
+        }
     }
 
-}
+
 
 .form-label{
     font-family:variables.$font-family; 

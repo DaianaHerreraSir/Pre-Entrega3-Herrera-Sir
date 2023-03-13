@@ -371,22 +371,22 @@ nav ul .nav-link {
   margin-top: 3rem;
   font-family: "Lobster", cursive;
 }
-.tituloh2 .parrafos {
+
+.parrafos {
   font-size: 1rem;
   color: #21130d;
   font-family: "Cabin", sans-serif;
   text-align: center;
   font-weight: bold;
 }
-
-.whatsapp {
+.parrafos .whatsapp {
   font-style: italic;
   font-size: medium;
   font-weight: bold;
   color: #055d2d;
   text-decoration: none;
 }
-.whatsapp:hover {
+.parrafos .whatsapp:hover {
   color: #f5f5dc;
 }
 
