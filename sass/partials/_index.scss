@@ -1,0 +1,90 @@
+@use 'variables';
+@use'mixin';
+/*PAGINIA INICIAL*/
+/*MAIN*/
+.main_contenedor {
+    background-image: url(../img/fondosmain.jpg);
+    object-fit: contain;
+    @include mixin.background;
+    @include mixin.crear-flex(flex,center,center,column);}
+/*TITULO PRINCIPAL*/
+.contenedor_titulo{
+    @include mixin.crear-flex(flex,center,center,column);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 40rem;
+    h1{
+        color: variables.$color-crema;
+        font-family: variables.$font-family;
+        text-align: center;
+        letter-spacing: 1rem;
+        font-size: 2rem;
+        font-style: normal;
+        padding-bottom: 1.5rem;
+    }
+}
+.parrafo_main{  
+    color: variables.$color-marron;
+    font-family: variables.$letra-parrafos;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: bold;}
+
+/*SUBTITULO*/
+.div_subtitulo{
+    @include mixin.crear-flex(flex,space-evenly,center,column);
+    background-image: linear-gradient(to left,#958e7e,#21130d);
+    max-width: 100%;
+    .h2{
+        font-family: variables.$letra-subtitulos;
+        color: #f8f1ed;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        padding: variables.$padding;
+        font-size: 1.6rem;}
+    }
+
+.parrafo1 {
+    color: variables.$color-crema;
+    font-family: variables.$letra-parrafos;
+    font-size: 1rem;
+    padding: variables.$padding;
+    text-align: center;
+    font-weight: bold;
+}    
+/*DESKTOP*/
+
+@media screen and (min-width:768px){
+
+.div_main{
+    width: 100%;
+        }
+/*TITULO*/
+.contenedor_titulo{
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    height: 40rem;
+    h1{
+        letter-spacing: 2rem;
+        font-size: 3rem;
+        padding: 3rem;}
+}
+
+.parrafo_main{  
+    text-align: center;
+    font-style: italic;
+    font-size: variables.$letra-grande;
+}
+
+.div_subtitulo{
+    .h2{ 
+        letter-spacing: 1rem;
+        text-align: center;
+        font-size: variables.$letra-grande;
+        }
+    }
+.parrafo1{
+    font-size: 1.5rem;
+    }   
+}

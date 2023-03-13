@@ -1,0 +1,49 @@
+@use './variables';
+@use './mixin';
+/*FOOTER*/
+
+.footer_Contenedor{
+    background-image: linear-gradient(to right, #e7d9ae,#f5f5dc);;
+    display: grid;
+    height: 100%;
+    padding-bottom: 1.3rem;
+.box_div{
+    @include mixin.crear-flex(flex,center,center,column);
+
+h3{
+    font-family: variables.$letra-parrafos;
+    color: variables.$color-marron;
+    font-size:1.3rem;
+    padding: 1.2rem;
+    font-weight: bold;
+        }   
+    }
+}
+/*LOGOS DE WHATSAPP E INSTAGRAM*/
+.redes{
+    height: 2rem;
+    width: 2rem;
+    margin: 0;
+}
+
+  /*DESKTOP*/
+  @media screen and (min-width:768px){
+.footer_Contenedor{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+.box_div{
+    @include mixin.crear-flex(flex,center,center,column);
+   
+h3{
+    font-size: 1.3rem;
+    padding: 1.2rem;
+        }
+    }
+}
+.redes {
+    height: 3rem;
+    width: 3rem;
+    }    
+}

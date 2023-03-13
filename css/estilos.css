@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-image: url(../img/fondobody.jpg);
+}
+
+.container-fluid {
+  background-image: linear-gradient(to right, #e7d9ae, #f5f5dc);
+}
+.container-fluid img {
+  width: 4rem;
+  height: 4rem;
+}
+.container-fluid .navbar-brand {
+  position: absolute;
+}
+
+.navbar-expand-lg {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+}
+
+/*CONTENEDOR DEL INICIO Y EL LOGO*/
+.div_ul {
+  margin-right: 11rem;
+  margin-left: 1rem;
+}
+
+/*TEXTO DEL NAV*/
+nav ul li {
+  list-style: none;
+  align-items: center;
+}
+nav ul .nav-link {
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
+  color: #21130d;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  /*HEADER*/
+  .imagen_div {
+    display: flex;
+  }
+  .container-fluid img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+/*PAGINIA INICIAL*/
+/*MAIN*/
+.main_contenedor {
+  background-image: url(../img/fondosmain.jpg);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*TITULO PRINCIPAL*/
+.contenedor_titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 40rem;
+}
+.contenedor_titulo h1 {
+  color: #f5f5dc;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+  font-style: normal;
+  padding-bottom: 1.5rem;
+}
+
+.parrafo_main {
+  color: #21130d;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*SUBTITULO*/
+.div_subtitulo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #958e7e, #21130d);
+  max-width: 100%;
+}
+.div_subtitulo .h2 {
+  font-family: "Lobster", cursive;
+  color: #f8f1ed;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.parrafo1 {
+  color: #f5f5dc;
+  font-family: "Dosis", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .div_main {
+    width: 100%;
+  }
+  /*TITULO*/
+  .contenedor_titulo {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 40rem;
+  }
+  .contenedor_titulo h1 {
+    letter-spacing: 2rem;
+    font-size: 3rem;
+    padding: 3rem;
+  }
+  .parrafo_main {
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+  }
+  .div_subtitulo .h2 {
+    letter-spacing: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .parrafo1 {
+    font-size: 1.5rem;
+  }
+}
+/*PAGINA 2 QUIENES SOMOS*/
+.h2_pag2 {
+  background-image: linear-gradient(to left, #958e7e, #21130d);
+  font-family: "Lobster", cursive;
+  color: #f5f5dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.quienessomos {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+}
+
+.parrafos {
+  font-size: 1rem;
+  font-family: "Cabin", sans-serif;
+  color: #21130d;
+  font-weight: bold;
+  text-align: center;
+  margin: 4rem;
+}
+
+.imagen_div {
+  display: none;
+}
+
+.video {
+  display: none;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .h2_pag2 {
+    letter-spacing: 2rem;
+  }
+  .quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .parrafos {
+    font-size: 1.3rem;
+  }
+  .div_img {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .div_img .imagen_div {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    border-radius: 1rem;
+  }
+  .Nproductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .Nproductos .video {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    object-fit: cover;
+    margin: 2rem;
+    border-radius: 1rem;
+  }
+  .textofinal {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 250px;
+    white-space: break-spaces;
+  }
+}
+/*PAGINA 3 PRODUCTOS*/
+.parrafo-producto {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container_fotos {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 150px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+
+.imgp {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 1rem;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+}
+
+.nombresprod {
+  color: #21130d;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .parrafo-producto {
+    font-size: 1.5rem;
+  }
+  .container_fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 30px;
+  }
+  .container_fotos .imgp {
+    width: 80%;
+    height: 80%;
+  }
+}
+.container_precios {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  margin: 1rem;
+  background-color: rgba(183, 186, 160, 0.5);
+  font-weight: bold;
+}
+
+.precio-h2 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+.div-li ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.titulo-h3 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+.precios {
+  border: solid;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .box-hojaldre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .div-lista {
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+  }
+  .div-precio {
+    padding: 1rem;
+  }
+}
+.grid_1, .grid_2 {
+  margin: 1.2rem;
+  padding: 0.8rem;
+  background: rgba(229, 234, 228, 0.4);
+  color: #000;
+  border: solid;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+.tituloh2 {
+  margin-top: 3rem;
+  font-family: "Lobster", cursive;
+}
+.tituloh2 .parrafos {
+  font-size: 1rem;
+  color: #21130d;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.whatsapp {
+  font-style: italic;
+  font-size: medium;
+  font-weight: bold;
+  color: #055d2d;
+  text-decoration: none;
+}
+.whatsapp:hover {
+  color: #f5f5dc;
+}
+
+.form-label {
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .div_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .grid_1 {
+    grid-column: 1/2;
+  }
+  .grid_2 {
+    grid-column: 2/3;
+  }
+  .tituloh2 {
+    font-size: 2rem;
+  }
+  .tituloh2 .parrafos {
+    font-size: 1.3rem;
+  }
+  .form-label {
+    font-size: 1.3rem;
+  }
+  .whatsapp {
+    font-size: 1.3rem;
+  }
+}
+/*FOOTER*/
+.footer_Contenedor {
+  background-image: linear-gradient(to right, #e7d9ae, #f5f5dc);
+  display: grid;
+  height: 100%;
+  padding-bottom: 1.3rem;
+}
+.footer_Contenedor .box_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_Contenedor .box_div h3 {
+  font-family: "Dosis", sans-serif;
+  color: #21130d;
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  font-weight: bold;
+}
+
+/*LOGOS DE WHATSAPP E INSTAGRAM*/
+.redes {
+  height: 2rem;
+  width: 2rem;
+  margin: 0;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .footer_Contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .footer_Contenedor .box_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer_Contenedor .box_div h3 {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
+  .redes {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

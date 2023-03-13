@@ -1,0 +1,68 @@
+@use './variables';
+@use './mixin';
+
+.container-fluid{
+    background-image: linear-gradient(to right, #e7d9ae,#f5f5dc);
+
+img {
+    @include mixin.tamanios(4rem,4rem);
+}
+.navbar-brand{
+    position:absolute;
+}
+}
+.navbar-expand-lg{
+    margin: 0;
+    padding: 0;}
+    
+.navbar-collapse {
+    display: flex;
+    flex-direction:column;}
+
+/*CONTENEDOR DEL INICIO Y EL LOGO*/
+.div_ul{
+    margin-right: 11rem;
+    margin-left: 1rem
+}
+
+/*TEXTO DEL NAV*/
+nav{
+    ul{ 
+        li{
+            list-style: none;
+            align-items: center;}
+.nav-link {
+    font-family: variables.$letra-parrafos;
+    font-size: variables.$letra-media;
+    color: variables.$color-marron;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    margin:0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+        }
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width:768px){
+
+/*HEADER*/
+.imagen_div{
+    display: flex;
+}
+.container-fluid{
+    img {
+        @include mixin.tamanios (6rem,6rem);
+        }
+}
+    
+.navbar-collapse{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.nav-link{
+    font-size: variables.$letra-media;
+    }
+}

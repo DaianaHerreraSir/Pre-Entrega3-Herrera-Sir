@@ -1,0 +1,14 @@
+@mixin crear-flex($d,$jc,$ai,$fd){
+    display: $d;
+    justify-content:$jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@mixin tamanios($ancho,$alto){
+    width:$ancho;
+    height: $alto;}

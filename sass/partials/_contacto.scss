@@ -1,0 +1,82 @@
+@use'./variables';
+@use'./mixin';
+
+
+.grid_1, .grid_2{
+    margin:1.2rem;
+    padding: 0.8rem;
+    background:rgba(229,234,228,0.4);
+    color: #000;
+    border:solid;
+    font-weight: bold;
+    text-align: variables.$texto-centrado;
+    font-family: variables.$letra-parrafos;
+    }
+
+.tituloh2{
+    margin-top: 3rem;
+    font-family: variables.$letra-subtitulos;
+
+    .parrafos{
+        font-size: variables.$letra-media;
+        color: variables.$color-marron;
+        font-family: variables.$font-family;
+        text-align: variables.$texto-centrado;
+        font-weight:bold;
+    }
+}
+.whatsapp{
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    color: #055d2d;
+    text-decoration: none;
+    &:hover{
+        color:variables.$color-crema;
+    }
+
+}
+
+.form-label{
+    font-family:variables.$font-family; 
+    font-style: italic;
+    font-size: 1.2rem;
+
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width:768px){
+
+.div_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    }
+    
+.grid_1{
+    grid-column: 1/2;
+}
+    
+.grid_2{
+    grid-column: 2/3;
+}
+    
+.tituloh2{
+    font-size: variables.$letra-grande;
+    
+    .parrafos{
+        font-size: 1.3rem;}
+    }
+
+.form-label{
+        font-size: 1.3rem;
+    }
+    
+ .whatsapp{
+        font-size: 1.3rem;
+    }
+    
+    
+
+}

@@ -1,0 +1,47 @@
+@use'./variables';
+@use'./mixin';
+
+
+.container_precios{
+    text-align: variables.$texto-centrado;
+    font-family: variables.$letra-parrafos;
+    margin: 1rem;
+    background-color: rgba(183, 186, 160, 0.5);
+    font-weight: bold;
+}
+.precio-h2{
+    text-align: variables.$texto-centrado;
+    font-family: variables.$letra-subtitulos
+
+} 
+.div-li{
+    ul{
+        li{
+            list-style: none;
+            margin: 1rem;
+        }
+    }
+}
+.titulo-h3{
+    font-family: variables.$letra-subtitulos;
+    text-align: variables.$texto-centrado;}
+.precios{
+    border: solid;
+}
+
+/*DESKTOP*/
+@media screen and (min-width:768px){
+
+.box-hojaldre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+.div-lista {
+    margin-top: 7rem;
+    margin-bottom: 10rem;}
+
+.div-precio{
+    padding: 1rem;
+}
+}

@@ -1,0 +1,83 @@
+@use'./variables';
+@use'./mixin';
+/*PAGINA 2 QUIENES SOMOS*/
+.h2_pag2{
+    background-image: linear-gradient(to left,#958e7e,#21130d);
+    font-family: variables.$letra-subtitulos;
+    color: variables.$color-crema;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.quienessomos{
+    text-align: center;
+    font-family: variables.$letra-parrafos;
+    font-weight: bold;}
+
+    .parrafos{
+        font-size: variables.$letra-media;
+        font-family: variables.$font-family;
+        color: variables.$color-marron;
+        font-weight: bold;
+        text-align: center;
+        margin: 4rem;
+}
+.imagen_div{
+    display: none;
+}
+
+.video{
+    display: none;
+}
+
+
+ /*DESKTOP*/
+ @media screen and (min-width:768px){
+
+    .h2_pag2{
+        letter-spacing: 2rem;
+    }
+.quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;}
+
+.parrafos{
+    font-size: 1.3rem;}
+
+.div_img{
+    display:flex;
+    justify-content: center;
+    margin: 1rem;
+    
+    .imagen_div{
+        @include mixin.tamanios(50%,50%);
+        display: flex;
+        border-radius: 1rem;
+    }
+}
+
+.Nproductos{
+    @include mixin.crear-flex(flex,center,center,row-reverse);
+
+    .video{
+        @include mixin.tamanios(400px,400px);
+        display: flex;
+        object-fit: cover;
+        margin: 2rem;
+        border-radius: 1rem;
+    }
+}
+.textofinal{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 250px;
+    white-space:break-spaces;
+}
+}
