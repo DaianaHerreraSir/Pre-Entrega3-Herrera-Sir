@@ -1,6 +1,8 @@
 @use './variables';
 @use './mixin';
 
+/*BARRA DE NAVEGACION*/
+
 .container-fluid{
     background-image: linear-gradient(to right, #e7d9ae,#f5f5dc);
 
@@ -47,7 +49,6 @@ nav{
 /*DESKTOP*/
 @media screen and (min-width:768px){
 
-/*HEADER*/
 .imagen_div{
     display: flex;
 }

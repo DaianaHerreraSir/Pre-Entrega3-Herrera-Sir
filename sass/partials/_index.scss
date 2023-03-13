@@ -1,6 +1,6 @@
 @use 'variables';
 @use'mixin';
-/*PAGINIA INICIAL*/
+/*PAGINA INICIAL*/
 /*MAIN*/
 .main_contenedor {
     background-image: url(../img/fondosmain.jpg);
@@ -22,14 +22,15 @@
         font-style: normal;
         padding-bottom: 1.5rem;
     }
-}
+
 .parrafo_main{  
     color: variables.$color-marron;
     font-family: variables.$letra-parrafos;
     text-align: center;
     font-style: italic;
     font-size: 1.3rem;
-    font-weight: bold;}
+    font-weight: bold;} 
+}
 
 /*SUBTITULO*/
 .div_subtitulo{
@@ -59,7 +60,6 @@
 
 .div_main{
     width: 100%;
-        }
 /*TITULO*/
 .contenedor_titulo{
     padding-top:5rem;
@@ -69,14 +69,14 @@
         letter-spacing: 2rem;
         font-size: 3rem;
         padding: 3rem;}
-}
-
 .parrafo_main{  
     text-align: center;
     font-style: italic;
     font-size: variables.$letra-grande;
 }
-
+}
+}
+/*SUBTITULO*/
 .div_subtitulo{
     .h2{ 
         letter-spacing: 1rem;

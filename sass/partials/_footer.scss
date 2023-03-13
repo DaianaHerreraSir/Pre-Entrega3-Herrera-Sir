@@ -21,8 +21,7 @@ h3{
 }
 /*LOGOS DE WHATSAPP E INSTAGRAM*/
 .redes{
-    height: 2rem;
-    width: 2rem;
+    @include mixin.tamanios(2rem, 2rem);
     margin: 0;
 }
 

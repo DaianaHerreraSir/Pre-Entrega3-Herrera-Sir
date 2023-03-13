@@ -23,15 +23,14 @@
         color: variables.$color-marron;
         font-weight: bold;
         text-align: center;
-        margin: 4rem;
-}
+        margin: 4rem;}
+
 .imagen_div{
     display: none;
 }
 
 .video{
-    display: none;
-}
+   display: none;}
 
 
  /*DESKTOP*/
@@ -44,8 +43,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-items: center;}
-
+    justify-items: center;
+}
 .parrafos{
     font-size: 1.3rem;}
 
@@ -72,6 +71,7 @@
         border-radius: 1rem;
     }
 }
+
 .textofinal{
     display: flex;
     flex-wrap: wrap;
@@ -80,4 +80,5 @@
     height: 250px;
     white-space:break-spaces;
 }
+
 }
