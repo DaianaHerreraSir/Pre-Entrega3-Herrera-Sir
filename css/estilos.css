@@ -20,9 +20,6 @@ body {
   width: 4rem;
   height: 4rem;
 }
-.container-fluid .navbar-brand {
-  position: absolute;
-}
 
 .navbar-expand-lg {
   margin: 0;
@@ -98,7 +95,7 @@ nav ul .nav-link {
   padding-bottom: 5rem;
   height: 40rem;
 }
-.contenedor_titulo h1 {
+.contenedor_titulo .h1 {
   color: #f5f5dc;
   font-family: "Cabin", sans-serif;
   text-align: center;
